@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Invitación digital — XV Años de Narda Ayala">
+  <title>XV Años — Narda Ayala</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="cover-open">
+
+  <div id="envelope-cover" class="envelope-cover" role="button" aria-label="Abrir invitación" tabindex="0">
+    <div class="envelope-cover__panel">
+      <div class="envelope-cover__seal">
+        <span class="envelope-cover__seal-text">Abrir</span>
+      </div>
+    </div>
+  </div>
+
+  <button id="music-toggle" class="music-btn" type="button" aria-label="Reproducir música" aria-pressed="false">
+    <img class="music-btn__icon" src="assets/icons/icon-musica.png" alt="">
+    <span class="music-btn__state music-btn__state--play" aria-hidden="true">▶</span>
+    <span class="music-btn__state music-btn__state--pause" aria-hidden="true">❚❚</span>
+  </button>
+  <audio id="bg-music" loop preload="auto">
+    <source src="assets/audio/musica.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- HERO -->
+  <header class="hero" id="hero">
+    <div class="hero__overlay"></div>
+    <div class="hero__content fade-in">
+      <p class="hero__label">Mis XV Años</p>
+      <h1 class="hero__name">Narda</h1>
+      <p class="hero__lastname">Ayala</p>
+      <span class="hero__heart" aria-hidden="true">♥</span>
+    </div>
+  </header>
+
+  <!-- BIENVENIDA -->
+  <section class="welcome-block fade-in">
+    <p class="welcome-block__text">
+      Con inmensa alegría queremos compartir contigo este momento tan especial en la vida de nuestra hija.
+    </p>
+  </section>
+
+  <!-- CUENTA REGRESIVA -->
+  <section class="section section--countdown" id="countdown">
+    <div class="container">
+      <h2 class="section__title fade-in">Faltan</h2>
+      <div class="countdown fade-in" aria-live="polite">
+        <div class="countdown__item"><span class="countdown__value" id="days">00</span><span class="countdown__label">Días</span></div>
+        <div class="countdown__item"><span class="countdown__value" id="hours">00</span><span class="countdown__label">Horas</span></div>
+        <div class="countdown__item"><span class="countdown__value" id="minutes">00</span><span class="countdown__label">Min</span></div>
+        <div class="countdown__item"><span class="countdown__value" id="seconds">00</span><span class="countdown__label">Seg</span></div>
+      </div>
+    </div>
+  </section>
+
+  <main>
+
+    <!-- PADRES Y PADRINOS -->
+    <section class="section section--family" id="familia">
+      <div class="container">
+        <article class="family-card fade-in">
+          <p class="family-card__intro">
+            Con la bendición de Dios y en compañía de mis padres y padrinos
+          </p>
+
+          <div class="family-card__group">
+            <h2 class="family-card__heading">Mis Padres</h2>
+            <p class="family-card__name">Ayala Alfredo Sebastián</p>
+            <p class="family-card__name">Ledesma Lorena Elizabeth</p>
+          </div>
+
+          <div class="family-card__group">
+            <h2 class="family-card__heading">Mis Padrinos</h2>
+            <p class="family-card__name">Ayala Mariela Andrea</p>
+            <p class="family-card__name">Cresta Javien Cayetano</p>
+          </div>
+
+          <p class="family-card__outro">
+            Nos complace invitarte a ser parte de este gran día.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- INVITACIÓN -->
+    <section class="section section--intro">
+      <div class="container">
+        <p class="intro-text fade-in">
+          Nos complace invitarte a la fiesta con motivo de los <strong>XV Años</strong> de
+          <em>Narda Ayala</em>. Será un honor contar con tu presencia.
+        </p>
+      </div>
+    </section>
+
+    <!-- FOTO -->
+    <section class="portrait-section fade-in" aria-hidden="true">
+      <div class="portrait-section__frame">
+        <img src="assets/hero.png" alt="Narda Ayala" loading="lazy">
+      </div>
+    </section>
+
+    <!-- CUÁNDO Y DÓNDE -->
+    <section class="section" id="details">
+      <div class="container">
+        <h2 class="section__title fade-in">Cuándo y Dónde</h2>
+        <div class="section__divider fade-in" aria-hidden="true"></div>
+
+        <article class="event-card fade-in">
+          <div class="event-card__image">
+            <img src="assets/iglesia.png" alt="Ceremonia religiosa" loading="lazy">
+          </div>
+          <div class="event-card__body">
+            <h3 class="event-card__title">Ceremonia Religiosa</h3>
+            <p class="event-card__detail">Viernes 6 de Febrero, 2027</p>
+            <p class="event-card__detail">21:00 Hrs.</p>
+            <p class="event-card__detail">Iglesia Nazareno de la Compañía de Jesús</p>
+            <button class="btn btn--accent" id="btn-maps-ceremonia" type="button">Cómo llegar</button>
+          </div>
+        </article>
+
+        <article class="event-card fade-in">
+          <div class="event-card__image">
+            <img src="assets/recepcion.png" alt="Recepción en el salón" loading="lazy">
+          </div>
+          <div class="event-card__body">
+            <h3 class="event-card__title">Fiesta</h3>
+            <p class="event-card__detail">Viernes 6 de Febrero, 2027</p>
+            <p class="event-card__detail">22:00 Hrs.</p>
+            <p class="event-card__detail">Salón Dorado — Club de Regatas de Corrientes</p>
+            <p class="event-card__note">Al término de la Eucaristía</p>
+            <button class="btn btn--accent" id="btn-maps-fiesta" type="button">Cómo llegar</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CRONOGRAMA -->
+    <section class="section section--timeline" id="cronograma">
+      <div class="container">
+        <h2 class="section__title fade-in">Cronograma</h2>
+        <div class="section__divider fade-in" aria-hidden="true"></div>
+        <ol class="timeline fade-in">
+          <li class="timeline__item">
+            <span class="timeline__icon"><img src="assets/icons/icon-iglesia.png" alt=""></span>
+            <div class="timeline__content"><h3>Eucaristía</h3><p>21:00 Hrs. — Iglesia Nazareno de la Compañía de Jesús</p></div>
+          </li>
+          <li class="timeline__item">
+            <span class="timeline__icon"><img src="assets/icons/icon-fiesta.png" alt=""></span>
+            <div class="timeline__content"><h3>Recepción</h3><p>Salón Dorado</p></div>
+          </li>
+          <li class="timeline__item">
+            <span class="timeline__icon"><img src="assets/icons/icon-comida.png" alt=""></span>
+            <div class="timeline__content"><h3>Cena</h3><p>Cena y brindis</p></div>
+          </li>
+          <li class="timeline__item">
+            <span class="timeline__icon"><img src="assets/icons/icon-musica.png" alt=""></span>
+            <div class="timeline__content"><h3>Fiesta</h3><p>Música y baile</p></div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- REGALO -->
+    <section class="section" id="regalo">
+      <div class="container">
+        <article class="info-card fade-in">
+          <h3 class="info-card__title">Regalo</h3>
+          <p class="info-card__text">Tu presencia es nuestro mejor regalo. Si deseás hacernos un obsequio, podés colaborar con la <em>lluvia de sobres</em>.</p>
+          <button class="btn btn--outline" id="btn-regalo" type="button" aria-expanded="false">Ver datos</button>
+          <div class="info-card__extra" id="regalo-extra" hidden>
+            <p><strong>Titular:</strong> <span id="regalo-titular">—</span></p>
+            <p><strong>Banco:</strong> <span id="regalo-banco">—</span></p>
+            <p><strong>Alias:</strong> <span id="regalo-alias">—</span></p>
+            <p><strong>CBU:</strong> <span id="regalo-cbu">—</span></p>
+            <button class="btn btn--accent btn--copy" id="btn-copy-alias" type="button">Copiar alias</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- DRESS CODE -->
+    <section class="section section--dresscode" id="dresscode">
+      <div class="container">
+        <div class="dresscode fade-in">
+          <h2 class="dresscode__title">Código de vestimenta</h2>
+          <p class="dresscode__text">Formal / Elegante</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CANCIONES -->
+    <section class="section" id="canciones">
+      <div class="container">
+        <article class="info-card fade-in">
+          <h3 class="info-card__title">¿Qué canción no puede faltar?</h3>
+          <p class="info-card__text">Sugerinos la música que querés escuchar en la fiesta.</p>
+          <form class="song-form" id="song-form">
+            <input class="song-form__input" type="text" id="song-input" placeholder="Nombre de la canción y artista" required>
+            <button class="btn btn--accent" type="submit">Enviar sugerencia</button>
+          </form>
+        </article>
+      </div>
+    </section>
+
+    <!-- RSVP -->
+    <section class="section section--rsvp" id="rsvp">
+      <div class="container">
+        <div class="rsvp-card fade-in">
+          <h2 class="section__title section__title--light">Confirmá tu asistencia</h2>
+          <p class="rsvp-card__deadline">Por favor confirma antes del 05 de enero de 2027</p>
+          <a class="btn btn--light btn--large" id="btn-rsvp" href="#" target="_blank" rel="noopener noreferrer">Confirmar Asistencia</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="calendar-block fade-in">
+      <a class="btn btn--light btn--large" id="btn-calendar" href="#" target="_blank" rel="noopener noreferrer">Agendar en calendario</a>
+    </section>
+
+    <section class="section section--thanks" id="thanks">
+      <div class="container">
+        <div class="thanks-card fade-in">
+          <p class="thanks-card__text">Gracias por acompañarme en este día tan especial</p>
+          <span class="thanks-card__heart" aria-hidden="true">♥</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALERÍA -->
+    <section class="gallery" id="galeria" aria-label="Galería de fotos">
+      <div class="gallery__item fade-in"><img src="assets/hero.png" alt="Narda Ayala" loading="lazy" style="object-position:center 10%"></div>
+      <div class="gallery__item fade-in"><img src="assets/hero.png" alt="Narda Ayala" loading="lazy" style="object-position:center 30%"></div>
+      <div class="gallery__item fade-in"><img src="assets/hero.png" alt="Narda Ayala" loading="lazy" style="object-position:center 50%"></div>
+    </section>
+
+  </main>
+
+  <footer class="footer fade-in">
+    <p class="footer__script">Te espero</p>
+    <p class="footer__name">Narda Ayala</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

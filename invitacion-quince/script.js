@@ -3,13 +3,14 @@
  */
 const CONFIG = {
   nombre: 'Narda Ayala',
-  eventDate: new Date(2027, 1, 6, 18, 0, 0),
+  eventDate: new Date(2027, 1, 6, 22, 0, 0),
   rsvpDeadline: '05 de enero de 2027',
   whatsappNumber: '5493794405570',
   whatsappMessage: '¡Hola! Quiero confirmar mi asistencia a los XV Años de Narda Ayala. 🎉',
 
   ceremonia: {
-    hora: '17:00 Hrs.',
+    fecha: '05 de febrero de 2027',
+    hora: '21:00 Hrs.',
     lugar: 'Iglesia Nazareno de la Compañía de Jesús',
     mapsUrl:
       'https://www.google.com/maps/search/?api=1&query=Iglesia+Nazareno+Compañía+de+Jesús+Corrientes',
